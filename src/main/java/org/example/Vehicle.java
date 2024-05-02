@@ -7,6 +7,8 @@ public class Vehicle {
     private String model = "";
     private String company = "";
 
+
+    // no arg constructor
     public Vehicle() {}
 
     public Vehicle(String name, String color, String model, String company) {
@@ -16,6 +18,7 @@ public class Vehicle {
         this.company = company;
     }
 
+    // setters
     public void setName(String name) {
         this.name = name;
     }
@@ -29,6 +32,8 @@ public class Vehicle {
         this.company = company;
     }
 
+
+    // getters
     public String getName() {
         return this.name;
     }
