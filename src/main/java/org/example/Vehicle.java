@@ -6,17 +6,25 @@ public class Vehicle {
     private String color = "";
     private String model = "";
     private String company = "";
+    private String engine = "800";
+    public static int count = 0;
 
 
     // no arg constructor
-    public Vehicle() {}
+    public Vehicle() {
+        count++;
+    }
 
-    public Vehicle(String name, String color, String model, String company) {
+    public Vehicle(String name, String color, String model, String company, String engine) {
         this.name = name;
         this.color = color;
         this.model = model;
         this.company = company;
+        this.engine = engine;
+        count++;
     }
+
+
 
     // setters
     public void setName(String name) {
@@ -31,6 +39,7 @@ public class Vehicle {
     public void setCompany(String company) {
         this.company = company;
     }
+    public void setEngine(String engine) {this.engine = engine; }
 
 
     // getters
@@ -45,5 +54,19 @@ public class Vehicle {
     }
     public String getCompany() {
       return this.company;
+    }
+    private String getEngine() {
+        return this.engine;
+    }
+    public static String getVehicle() { return "Name and color set."; }
+
+//    uses engine to check speed
+    public int getSpeed() {
+        String a = getEngine();
+        if (a == "800") {
+            return 90;
+        } else {
+            return 120;
+        }
     }
 }
