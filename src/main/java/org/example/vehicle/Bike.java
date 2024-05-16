@@ -1,6 +1,6 @@
-package org.example;
+package org.example.vehicle;
 
-public class Bike extends Vehicle{
+public class Bike extends Vehicle {
     private boolean fourStroke = true;
 
     public Bike(String name, String color, String model, String company, String engine, boolean fourStroke) {

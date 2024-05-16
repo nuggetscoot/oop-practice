@@ -1,8 +1,10 @@
 package org.example;
 
-
-import javax.sound.midi.Soundbank;
-import java.sql.SQLOutput;
+import org.example.shape.Circle;
+import org.example.shape.Shape;
+import org.example.vehicle.Bike;
+import org.example.vehicle.Car;
+import org.example.vehicle.Vehicle;
 
 public class Main {
     public static void main(String[] args) {
@@ -46,9 +48,12 @@ public class Main {
         Bike vehicle5 = new Bike("Bora car", "purple", "Ioniq", "Hyundai", "800", true);
         //takes function from bike class
         System.out.println(vehicle5.getInfo());
+
+
+
+
+        Shape shape1 = new Circle();
+        shape1.draw();
     }
-
-
-
 
 }

@@ -1,6 +1,6 @@
-package org.example;
+package org.example.vehicle;
 
-public class Car extends Vehicle{
+public class Car extends Vehicle {
     private boolean powerSteering = false;
     private boolean ledScreen = true;
 
