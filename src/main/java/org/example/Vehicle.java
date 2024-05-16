@@ -69,4 +69,8 @@ public class Vehicle {
             return 120;
         }
     }
+
+    public String getInfo() {
+        return "this is a vehicle";
+    }
 }

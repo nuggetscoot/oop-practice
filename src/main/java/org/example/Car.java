@@ -12,6 +12,10 @@ public class Car extends Vehicle{
         this.ledScreen = ledScreen;
     }
 
+    public String getInfo() {
+        return "this is a car";
+    }
+
     // overrides vehicle getName method
     public String getName() {
         return "The name of your car is " + super.getName();
